@@ -1,0 +1,11 @@
+.dart_tool/
+.build/
+.packages
+.pub/
+build/
+.env
+*.pem
+*.key
+local.properties
+android/local.properties
+ios/Flutter/Flutter.framework

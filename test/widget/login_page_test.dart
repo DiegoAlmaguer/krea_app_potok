@@ -1,0 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:kreatrivpotok_app_v2/features/auth/presentation/login_page.dart';
+
+void main() {
+  testWidgets('login page renders fields', (tester) async {
+    await tester.pumpWidget(const ProviderScope(child: MaterialApp(home: LoginPage())));
+    expect(find.text('Sign in'), findsOneWidget);
+    expect(find.byType(TextField), findsNWidgets(2));
+  });
+}
